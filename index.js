@@ -66,7 +66,8 @@ function fetchData() {
         title.innerText = card.Name;
         const description = document.createElement("p");
         description.innerText = card.ShortDesc;
-        const button = document.createElement("button");
+        const button = document.createElement("button")
+        button.innerText = "View More";
         div.appendChild(image);
         div.appendChild(title);
         div.appendChild(description);
