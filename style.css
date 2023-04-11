@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+}
+
+nav{
+    box-shadow: 2px 4px 8px -2px #998aef;
+}
+
+li{
+    margin: 0px 30px;
+}
+
