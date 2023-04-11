@@ -55,14 +55,13 @@ const data = [
     }
 ]
 
-
 function fetchData() {
     console.log(data);
-    const main = document.getElementsByTagName("main");
+    const main = document.getElementsByTagName("main")[0];
     data.map((card) => {
         const div = document.createElement("div");
         const image = document.createElement("img");
-        image.innerHTML = card.ImageUrl;
+        image.src = card.ImageUrl; // set src attribute instead of innerHTML
         const title = document.createElement("h1");
         title.innerText = card.Name;
         const description = document.createElement("p");
@@ -72,7 +71,7 @@ function fetchData() {
         div.appendChild(title);
         div.appendChild(description);
         div.appendChild(button);
-        main.append(div);
+        main.appendChild(div); // use appendChild instead of append
     })
 }
 
